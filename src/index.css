@@ -1,1 +1,36 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+@layer utilities {
+  .px-global {
+    @apply  lg:px-100; /* padding horizontal en móvil y grande */
+  }
+}
+
+body{
+    background-color: #eee;
+   
+}
+
+.MenuNav {
+  display: flex;             /* flex */
+  flex-direction: column;    /* flex-col */
+  width: auto;               /* w-full */
+  background-color: #ffffff; /* bg-[#ffffff] */
+  padding: 1.25rem;          /* p-5 -> 5 * 0.25rem = 1.25rem */
+  gap: 1.25rem;              /* gap-5 -> 1.25rem */
+  color: #000000;            /* text-black */
+  position: absolute;        /* absolute */
+  top: 100%;                 /* top-full -> 100% */
+}
+
+.MenuNav li {
+    display: flex;
+    align-items: center
+
+}
+
+.MenuNav li span{
+    min-width: 8rem;
+}
