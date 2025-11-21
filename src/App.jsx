@@ -40,9 +40,7 @@ export function App () {
           </Routes>
 
         </CartProvider>
-        <Routes>
-            
-          </Routes>
+  
       </AuthProvider>
 
       
