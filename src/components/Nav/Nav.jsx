@@ -1,9 +1,9 @@
 import { ShoppingCart,User, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
-import { MenuLateral } from "./MenuLateral";
+import { MenuLateral } from "../MenuLateral";
 
 
-import { useCart } from "./context/CartContext/UseCart";
+import { useCart } from "../context/cartContext/UseCart";
 
 
 export function Nav(){

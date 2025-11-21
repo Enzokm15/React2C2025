@@ -37,15 +37,27 @@ export function CartProvider({ children }) {
 
   };
 
-  const removeFromCart = (id) =>
-    setCart((prev) => prev.filter((i) => i.id !== id));
+  const removeOneFromCart= (productId) => {
+    const updatedCart = [];
+    for (const item of cart) {
+      if (item.id === productId) {
+        const newQty = item.quantity - 1;
+        if (newQty > 0) updatedCart.push({ ...item, quantity: newQty });
+      } else {
+        updatedCart.push(item);
+      }
+    }
+    setCart(updatedCart);
+  }
+
+  const deleteFromCart = (id) => setCart((prev) => prev.filter((i) => i.id !== id));
 
   const clearCart = () => setCart([]);
   
   const totalItems = () => cart.reduce((acc, item) => acc + (item.quantity || 1), 0); 
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart,totalItems }}>
+    <CartContext.Provider value={{ cart, addToCart, removeOneFromCart, clearCart,totalItems,deleteFromCart }}>
       {children}
     </CartContext.Provider>
   );

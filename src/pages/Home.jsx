@@ -1,13 +1,11 @@
 import { Banner} from "../components/Banner";
-
-import { ContenedorProductos } from "../components/productos/ContenedorProductos";
+import { ItemListContainer } from "../components/ItemsListContainer/ItemListContainer";
 
 export function Home() {
     return(
         <>
-            
             <Banner/>
-            <ContenedorProductos/>
+            <ItemListContainer/>
             
             
         </>
