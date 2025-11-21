@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Trash2, Plus, Minus } from "lucide-react";
-import { useCart } from "../../components/context/cartContext/UseCart";
+import { useCart } from "../../components/context/CartContext/UseCart";
 import { ENDPOINT } from "../../utils/constantes";
 
 export const ItemDetailCart= ({item}) => {

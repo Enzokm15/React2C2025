@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MenuLateral } from "../MenuLateral";
 
 
-import { useCart } from "../context/cartContext/UseCart";
+import { useCart } from "../context/CartContext/UseCart";
 
 
 export function Nav(){

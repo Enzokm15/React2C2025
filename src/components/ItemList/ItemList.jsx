@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ShoppingCart} from "lucide-react";
-import { useCart } from "../context/cartContext/UseCart";
+import { useCart } from "../context/CartContext/UseCart";
 
 export function ItemList ({lista}){
     const { addToCart } = useCart();

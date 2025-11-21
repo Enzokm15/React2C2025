@@ -9,7 +9,7 @@ import { Admin } from "./components/admin/Admin.jsx";
 import { useState } from 'react';
 
 import { AuthProvider } from "./components/context/AuthContext/AuthContext.jsx";
-import { CartProvider } from "./components/context/cartContext/CartContext.jsx";
+import { CartProvider } from "./components/context/CartContext/CartContext.jsx";
 import { CartPage } from "./pages/Cart/CartPage.jsx";
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute.jsx";
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ENDPOINT } from "../../utils/constantes";
-import { useCart } from "../context/cartContext/UseCart"; 
+import { useCart } from "../context/CartContext/UseCart"; 
 
 export function ProductDetail() {
     const [detail, setDetail] = useState(null);
