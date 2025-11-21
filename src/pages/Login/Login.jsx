@@ -33,7 +33,7 @@ return (
 
         <input
           type="text"
-          placeholder="Usuario"
+          placeholder="Usuario: Chocolily"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           className="w-full px-4 py-2.5 bg-[#111] border border-[#2a2a2a] text-gray-200
@@ -43,7 +43,7 @@ return (
 
         <input
           type="password"
-          placeholder="Contraseña"
+          placeholder="Contraseña: usagi"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="w-full px-4 py-2.5 bg-[#111] border border-[#2a2a2a] text-gray-200
