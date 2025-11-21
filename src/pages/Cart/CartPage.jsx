@@ -1,5 +1,5 @@
 import { useCart } from "../../components/context/CartContext/UseCart";
-import { ItemDetailCart } from "./itemDetailCart";
+import { ItemDetailCart } from "./ItemDetailCart";
 
 
 export function CartPage() {
